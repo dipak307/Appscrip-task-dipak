@@ -1,0 +1,74 @@
+/* Recommend.css */
+.items-and-recommend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  hr {
+    border: 0.5px solid rgba(65, 57, 57, 0.101);
+  }
+  
+  .items-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .items-count {
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .hide-filter {
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .recommend select.custom-select {
+    position: relative;
+    width: 170px;
+    background-color: white;
+    padding: 5px;
+    padding-right: 30px; /* Make space for custom arrow */
+    
+  }
+  
+  .recommend select.custom-select option {
+    padding: 10px;
+   
+    background-color: white;
+  }
+  
+  /* Add checkmark for the selected option */
+  .recommend select.custom-select option[selected] {
+    background-color: white;
+    position: relative;
+  }
+  
+  .recommend select.custom-select option[selected]::before {
+    content: '✔';   
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+  }
+  .filters{
+    display: none ;
+   
+  }
+  @media only screen and (max-width: 468px) {
+    .items-count {
+        display: none;
+    }
+    .hide-filter{
+        display: none;
+    }
+    .filters{
+        display: block ;
+        cursor: pointer;
+        color: #999;
+    }
+     
+}

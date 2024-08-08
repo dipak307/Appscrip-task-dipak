@@ -1,0 +1,54 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .product {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  @media only screen and (min-width: 768px) {
+    .product {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+
+   .container {
+    display: flex;
+    gap: 20px; /* Optional: Adds space between the columns */
+  }
+  
+  .customizeitems {
+    width: 300px; /* Fixed width for the first column */
+    flex-shrink: 0; /* Prevents the column from shrinking */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .product {
+      width: calc(33.33% - 20px);
+    }
+    .content {
+       /* Ensures that the second column is at least 900px wide */
+       overflow: hidden;
+    }
+  }
+  

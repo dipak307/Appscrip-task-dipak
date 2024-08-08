@@ -1,0 +1,73 @@
+/* Navigation.css */
+
+.navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menubar{
+    list-style: none;
+  }
+  #styless{
+    border-style: none;
+  }
+ 
+  
+  .navigation-list li {
+    display: block; /* Change to block to stack items vertically on mobile */
+    margin-bottom: 10px; /* Add spacing between items on mobile */
+  }
+  
+  .navigation-list li:last-child {
+    margin-bottom: 0; /* Remove margin bottom for last item */
+  }
+  
+  .navigation-list li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Change to block to make full-width clickable area */
+  }
+  option{
+  border: none;
+  }
+  .menu-bar {
+    display: none;
+  }
+
+  .close-menu{
+    display: none;
+  }
+ 
+  
+  
+  /* Responsive Styles */
+  @media only screen and (min-width: 368px) {
+    .navigation-list li {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0; 
+    }
+   
+    .navigation-list li:last-child {
+      margin-right: 0; 
+    }
+  }
+
+  @media only screen and (max-width:468px) {
+    .menu{
+        display: none;
+        
+    }
+    .menu-bar{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        height: 25px;
+        width: 25px;
+        margin-left: 0px;
+    }
+    .userss{
+        display: none !important;
+    }
+  }
+  

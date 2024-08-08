@@ -1,0 +1,81 @@
+.column.customize {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensuring it takes full width */
+}
+
+select {
+    border: none;
+}
+
+.column.customize > div {
+    margin-bottom: 10px;
+}
+
+#customelable {
+    font-weight: 400;
+}
+
+.customize-options {
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.column.customize label {
+    display: block;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+.column.customize select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.column.customize input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .column.customize {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    .column.customize > div {
+        margin-bottom: 8px;
+        width: 200px;
+    }
+
+    .column.customize select {
+        padding: 6px;
+        width: 200px;
+    }
+}
+
+/* Media query for mobile (max-width: 468px) */
+@media screen and (max-width: 468px) {
+    .column.customize {
+        padding: 8px;
+        margin-bottom: 8px;
+      
+    }
+
+    .column.customize > div {
+        margin-bottom: 6px;
+      
+    }
+
+    .column.customize select {
+        
+        padding: 5px;
+    }
+}

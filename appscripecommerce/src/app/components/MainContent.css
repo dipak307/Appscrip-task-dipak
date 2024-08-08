@@ -1,0 +1,54 @@
+/* MainContent.css */
+
+.containermenu {
+    display: flex;
+    justify-content: center;
+  }
+  hr{
+     border: "0.5px solid ";
+     color: rgba(65, 57, 57, 0.101);
+  }
+  .contentmenu {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+    font-weight: 600;
+    gap: 20px;
+  }
+  
+  .content-item {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Set link color */
+    padding: 10px; /* Add padding to make clickable area larger */
+  }
+  .content-itemsss {
+    display: none;
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Set link color */
+    padding: 10px; /* Add padding to make clickable area larger */
+  }
+  
+  .content-item:hover {
+    color: blue; /* Change color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 468px) {
+    .content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items on smaller screens */
+    }
+  
+    .content-item {
+       display: none;
+      margin-top: 10px; /* Add spacing between items on smaller screens */
+    }
+    .content-itemsss {
+        display: block;
+        margin-left: 5px;
+        margin-top: 10px; /* Add spacing between items on smaller screens */
+      }
+  }
+  

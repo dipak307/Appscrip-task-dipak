@@ -1,0 +1,16 @@
+.product-discovery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.midHeading{
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.midHeading h1{
+    font-stretch:extra-expanded;
+   font-weight: 400;
+  }
